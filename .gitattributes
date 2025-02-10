@@ -2,3 +2,4 @@ HTB/Cicada/** filter=git-crypt diff=git-crypt
 HTB/Chemistry/** filter=git-crypt diff=git-crypt
 HTB/Alert/** filter=git-crypt diff=git-crypt
 HTB/LinkVortex/** filter=git-crypt diff=git-crypt
+HTB/Instant/** filter=git-crypt diff=git-crypt
