@@ -1,5 +1,5 @@
-HTB/Cicada/** filter=git-crypt diff=git-crypt
-HTB/Chemistry/** filter=git-crypt diff=git-crypt
-HTB/Alert/** filter=git-crypt diff=git-crypt
-HTB/LinkVortex/** filter=git-crypt diff=git-crypt
-HTB/Instant/** filter=git-crypt diff=git-crypt
+HTB/Machines/Cicada/** filter=git-crypt diff=git-crypt
+HTB/Machines/Chemistry/** filter=git-crypt diff=git-crypt
+HTB/Machines/Alert/** filter=git-crypt diff=git-crypt
+HTB/Machines/LinkVortex/** filter=git-crypt diff=git-crypt
+HTB/Machines/Instant/** filter=git-crypt diff=git-crypt
