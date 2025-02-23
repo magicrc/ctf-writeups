@@ -2,3 +2,5 @@ HTB/Machines/Chemistry/** filter=git-crypt diff=git-crypt
 HTB/Machines/Alert/** filter=git-crypt diff=git-crypt
 HTB/Machines/LinkVortex/** filter=git-crypt diff=git-crypt
 HTB/Machines/Instant/** filter=git-crypt diff=git-crypt
+HTB/Machines/Instant/** filter=git-crypt diff=git-crypt
+HTB/Challenges/ApacheBlaze/** filter=git-crypt diff=git-crypt
