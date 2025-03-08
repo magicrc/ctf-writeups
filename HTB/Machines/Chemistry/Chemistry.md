@@ -333,7 +333,7 @@ So try to access (and exploit it) over HTTP. We will forward one of ports on our
 └─$ ssh -L 7070:localhost:8080 -Nf rosa@chemistry.htb
 ```
 
-Little bit for web browsing shows that this is some kind of services monitor application (thus the name `monitoring_site/app.py`) with which we could list running services, however functionality of starting and stoping of services is not yet available. With brief JS analysis we could find `http://127.0.0.1:8080/list_services` endopoint which seems to return output of `service --status-all`. Before we continue this path let's [search](https://www.google.com/search?q=aiohttp+vulnerabilities) if there are some `aiohttp/3.9.1` HTTP server vulnarbilities to exploit. After digging thru the results we could find [CVE-2024-23334](https://nvd.nist.gov/vuln/detail/cve-2024-23334) which states:
+Little bit for web browsing shows that this is some kind of services monitor application (thus the name `monitoring_site/app.py`) with which we could list running services, however functionality of starting and stoping of services is not yet available. With brief JS analysis we could find `http://127.0.0.1:7070/list_services` endopoint which seems to return output of `service --status-all`. Before we continue this path let's [search](https://www.google.com/search?q=aiohttp+vulnerabilities) if there are some `aiohttp/3.9.1` HTTP server vulnarbilities to exploit. After digging thru the results we could find [CVE-2024-23334](https://nvd.nist.gov/vuln/detail/cve-2024-23334) which states:
 > When using aiohttp as a web server and configuring static routes, it is necessary to specify the root path for static files. Additionally, the option 'follow_symlinks' can be used to determine whether to follow symbolic links outside the static root directory. When 'follow_symlinks' is set to True, there is no validation to check if reading a file is within the root directory. This can lead to directory traversal vulnerabilities, resulting in unauthorized access to arbitrary files on the system, even when symlinks are not present.
 
 Now we need check if `monitoring_site/app.py` is using static files directory. By viewing HTML source we can quickly spot `/assets`, let's check if is vulnerable by traversing in loop to some known file (e.g. `/etc/passwd`).
@@ -376,7 +376,7 @@ We have grabbed root flag, but technically we have not escalated privilages to `
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-And thre is a key! Let's exfiltrate and use to gain `root` access over SSH.
+And thre is a key! Let's exfiltrate it and use to gain `root` access over SSH.
 ```
 ┌──(magicrc㉿perun)-[~/attack/HTB Chemistry]
 └─$ curl --path-as-is -s 127.0.0.1:7070/assets/../../../root/.ssh/id_rsa > chemistry.htb_root_id_rsa && \
