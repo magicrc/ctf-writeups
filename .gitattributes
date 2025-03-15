@@ -7,4 +7,3 @@ HTB/Challenges/PDFy/** filter=git-crypt diff=git-crypt
 "HTB/Challenges/Breathtaking View/**" filter=git-crypt diff=git-crypt
 HTB/Challenges/Desires/** filter=git-crypt diff=git-crypt
 HTB/Challenges/Interstellar/** filter=git-crypt diff=git-crypt
-HTB/Machines/Certified/** filter=git-crypt diff=git-crypt
