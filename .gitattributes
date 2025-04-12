@@ -1,4 +1,3 @@
-HTB/Machines/LinkVortex/** filter=git-crypt diff=git-crypt
 HTB/Challenges/ApacheBlaze/** filter=git-crypt diff=git-crypt
 HTB/Challenges/Insomnia/** filter=git-crypt diff=git-crypt
 "HTB/Challenges/Low Logic/**" filter=git-crypt diff=git-crypt
