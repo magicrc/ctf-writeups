@@ -9,3 +9,4 @@ HTB/Challenges/Web/TornadoService/** filter=git-crypt diff=git-crypt
 HTB/Challenges/Crypto/xorxorxor/** filter=git-crypt diff=git-crypt
 "HTB/Challenges/Crypto/The Last Dance/**" filter=git-crypt diff=git-crypt
 HTB/Challenges/Web/ScreenCrack/** filter=git-crypt diff=git-crypt
+HTB/Machines/Nocturnal/** filter=git-crypt diff=git-crypt
