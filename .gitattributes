@@ -12,3 +12,4 @@ HTB/Challenges/Web/ScreenCrack/** filter=git-crypt diff=git-crypt
 HTB/Machines/Nocturnal/** filter=git-crypt diff=git-crypt
 HTB/Challenges/Coding/Evaluative/** filter=git-crypt diff=git-crypt
 "HTB/Challenges/Coding/Primed for Action/**" filter=git-crypt diff=git-crypt
+HTB/Challenges/Coding/Sudoking/** filter=git-crypt diff=git-crypt
