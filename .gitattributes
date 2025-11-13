@@ -17,3 +17,4 @@ HTB/Machines/Puppy/** filter=git-crypt diff=git-crypt
 HTB/Machines/Expressway/** filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Conversor/** filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/Giveback/** filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Easy/Outbound/** filter=git-crypt diff=git-crypt
