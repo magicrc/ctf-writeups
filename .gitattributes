@@ -19,3 +19,4 @@ HTB/Machines/Linux/Easy/Conversor/** filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/Giveback/** filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Outbound/** filter=git-crypt diff=git-crypt
 HTB/Machines/Windows/Hard/NanoCorp/** filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Easy/Facts/**/* filter=git-crypt diff=git-crypt
