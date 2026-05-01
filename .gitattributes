@@ -22,3 +22,4 @@ HTB/Machines/Windows/Hard/NanoCorp/** filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Facts/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Silentium/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Silentium/images/api_key.png filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Easy/WingData/**/* filter=git-crypt diff=git-crypt
