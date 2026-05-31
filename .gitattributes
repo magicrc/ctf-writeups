@@ -29,3 +29,7 @@ HTB/Machines/Windows/Easy/MonitorsFour/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Reactor/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/Interpreter/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/Interpreter/images/mirth_connect.png filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/DevHub/**/* filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/DevHub/images/jupyter.png filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/DevHub/images/jupyter_console.png filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/DevHub/images/mcpjam.png filter=git-crypt diff=git-crypt
