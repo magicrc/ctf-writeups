@@ -44,3 +44,5 @@ HTB/Machines/Linux/Easy/CCTV/images/zm_version.png filter=git-crypt diff=git-cry
 HTB/Machines/Linux/Easy/Kobold/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Kobold/images/mcpjam.png filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Kobold/images/privatebin.png filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Easy/Connected/**/* filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Easy/Connected/images/freepbx.png filter=git-crypt diff=git-crypt
