@@ -30,3 +30,4 @@ HTB/Machines/Linux/Easy/Connected/images/freepbx.png filter=git-crypt diff=git-c
 HTB/Machines/Windows/Medium/Checkpoint/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Windows/Medium/Checkpoint/images/bloodhound.png filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Enigma/**/* filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/MakeSense/**/* filter=git-crypt diff=git-crypt
