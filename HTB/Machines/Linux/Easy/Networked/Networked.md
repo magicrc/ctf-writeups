@@ -3,7 +3,7 @@
 |-------------------|------------------------------------------------------------|
 | 📝 **Name**       | [Networked](https://app.hackthebox.com/machines/Networked) |  
 | 🏷 **Type**       | HTB Machine                                                |
-| 🖥️ **OS**        | Linux                                                      |
+| 🖥 **OS**         | Linux                                                      |
 | 🎯 **Difficulty** | Easy                                                       |
 
 # Attack path

@@ -1,10 +1,10 @@
 # Target
-| Category       | Details                                              |
-|----------------|------------------------------------------------------|
-| 📝 Name        | [Forest](https://app.hackthebox.com/machines/Forest) |
-| 🏷 Type        | HTB Machine                                          |
-| 🖥️ OS          | Windows                                              |
-| 🎯 Difficulty  | Easy                                                 |
+| Category          | Details                                              |
+|-------------------|------------------------------------------------------|
+| 📝 **Name**       | [Forest](https://app.hackthebox.com/machines/Forest) |  
+| 🏷 **Type**       | HTB Machine                                          |
+| 🖥 **OS**         | Windows                                              |
+| 🎯 **Difficulty** | Easy                                                 |
 
 # Scan
 ```
@@ -137,7 +137,7 @@ Info: Establishing connection to remote endpoint
 Foothold gained, time for escalation of privileges.
 
 # Privileges escalation
-As `svc-alfresco` does not have any intersting privileges that we could use immediately escalate to `Administrator`, we will analyze possible vecotrs with Bloodhound. Starting with gathering data using Python collector.
+As `svc-alfresco` does not have any interesting privileges that we could use immediately escalate to `Administrator`, we will analyze possible vectors with Bloodhound. Starting with gathering data using Python collector.
 ```
 ┌──(magicrc㉿perun)-[~/attack/HTB Forest]
 └─$ ~/Tools/BloodHound.py/bloodhound.py -d htb.local -c DCOnly -u svc-alfresco -p s3rvice -ns $TARGET -k
@@ -159,10 +159,10 @@ INFO: Found 0 trusts
 INFO: Done in 00M 09S
 ```
 
-Bloodhound shows strightforward path from `svc-alfresco` (owned) to `Administartor`.
+Bloodhound shows straightforward path from `svc-alfresco` (owned) to `Administartor`.
 ![Bloodhound](images/bloodhound.png)
 
-* `svc-alfresco@htb.local` is indirect memeber of `account operators@htb.local` which has `GenericAll` over `exchange windows permissions@htb.local`. Meaning we could abuse this to add `svc-alfresco@htb.local` to this group.
+* `svc-alfresco@htb.local` is indirect member of `account operators@htb.local` which has `GenericAll` over `exchange windows permissions@htb.local`. Meaning we could abuse this to add `svc-alfresco@htb.local` to this group.
 * Then `exchange windows permissions@htb.local` has `WriteDacl` over `htb.local`. We could use this to add `DCSync` privileges to `svc-alfresco@htb.local` and use `impacket-secretsdump` to dump NTLM hashes.
 
 Let's download `PowerSploit` to target.

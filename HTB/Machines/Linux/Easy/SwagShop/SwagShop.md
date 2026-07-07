@@ -3,7 +3,7 @@
 |---------------|----------------------------------------------------------|
 | 📝 Name       | [SwagShop](https://app.hackthebox.com/machines/SwagShop) |
 | 🏷 Type       | HTB Machine                                              |
-| 🖥️ OS        | Linux                                                    |
+| 🖥 **OS**     | Linux                                                    |
 | 🎯 Difficulty | Easy                                                     |
 
 # Scan
@@ -53,7 +53,7 @@ Nmap done: 1 IP address (1 host up) scanned in 8.20 seconds
 ```
 
 # Foothold
-We can see that `nmap` has found two remote services running on the target, with HTTP being quite obvious vector of attack. Brief browsing shows that Magento is running on web server. In the page footer we can see `© 2014 Magento Demo Store. All Rights Reserved.` With quick Google search we could find [history](https://www.mgt-commerce.com/blog/magento-versions-history/) of Magento releases, and it shows that Magento CE 1.9.x has been released in 2014. Additionally to that with `ffuf` we were able to find list of packages (under http://swagshop.htb/var/package/) which also shows 1.9.0.0.
+We can see that `nmap` has found two remote services running on the target, with HTTP being quite obvious vector of attack. Brief browsing shows that Magento is running on web server. In the page footer we can see `© 2014 Magento Demo Store. All Rights Reserved.` With quick Google search we could find [history](https://www.mgt-commerce.com/blog/magento-versions-history/) of Magento releases, and it shows that Magento CE 1.9.x has been released in 2014. Additionally, to that with `ffuf` we were able to find list of packages (under http://swagshop.htb/var/package/) which also shows 1.9.0.0.
 
 With little bit of Googling we can find that this version is vulnerable to Post (admin) Authenticated RCE and [exploit](https://github.com/Hackhoven/Magento-RCE) is available. What we need now are admin credentials, and here with help comes [CVE-2015-1397](https://nvd.nist.gov/vuln/detail/CVE-2015-1397). We could use this SQL injection vulnerability to create admin account. There is [exploit](https://www.exploit-db.com/exploits/37977) that we could use, however as it is quite old, it needs a couple of fixes. Refreshed version could be found [here](CVE-2015-1397.py). We will use this chain to get `meterpreter` based reverse shell.
 

@@ -3,7 +3,7 @@
 |-------------------|------------------------------------------------------------|
 | 📝 **Name**       | [TraceBack](https://app.hackthebox.com/machines/TraceBack) |  
 | 🏷 **Type**       | HTB Machine                                                |
-| 🖥️ **OS**        | Linux                                                      |
+| 🖥 **OS**         | Linux                                                      |
 | 🎯 **Difficulty** | Easy                                                       |
 
 # Scan

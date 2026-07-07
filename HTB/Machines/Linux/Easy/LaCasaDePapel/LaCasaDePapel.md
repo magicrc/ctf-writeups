@@ -3,7 +3,7 @@
 |-------------------|--------------------------------------------------------------------|
 | 📝 **Name**       | [LaCasaDePapel](https://app.hackthebox.com/machines/LaCasaDePapel) |  
 | 🏷 **Type**       | HTB Machine                                                        |
-| 🖥️ **OS**        | Linux                                                              |
+| 🖥 **OS**         | Linux                                                              |
 | 🎯 **Difficulty** | Easy                                                               |
 
 # Attack path

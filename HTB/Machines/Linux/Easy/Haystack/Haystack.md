@@ -3,7 +3,7 @@
 |-------------------|----------------------------------------------------------|
 | 📝 **Name**       | [Haystack](https://app.hackthebox.com/machines/Haystack) |  
 | 🏷 **Type**       | HTB Machine                                              |
-| 🖥️ **OS**        | Linux                                                    |
+| 🖥 **OS**         | Linux                                                    |
 | 🎯 **Difficulty** | Easy                                                     |
 
 # Attack path

@@ -3,7 +3,7 @@
 |-------------------|------------------------------------------------------------|
 | 📝 **Name**       | [Traverxec](https://app.hackthebox.com/machines/Traverxec) |  
 | 🏷 **Type**       | HTB Machine                                                |
-| 🖥️ **OS**        | Linux                                                      |
+| 🖥 **OS**         | Linux                                                      |
 | 🎯 **Difficulty** | Easy                                                       |
 
 # Scan

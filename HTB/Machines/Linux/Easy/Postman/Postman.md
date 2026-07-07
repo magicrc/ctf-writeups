@@ -3,7 +3,7 @@
 |-------------------|--------------------------------------------------------|
 | 📝 **Name**       | [Postman](https://app.hackthebox.com/machines/Postman) |  
 | 🏷 **Type**       | HTB Machine                                            |
-| 🖥️ **OS**        | Linux                                                  |
+| 🖥 **OS**         | Linux                                                  |
 | 🎯 **Difficulty** | Easy                                                   |
 
 # Scan

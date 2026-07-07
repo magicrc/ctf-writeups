@@ -3,7 +3,7 @@
 |-------------------|----------------------------------------------------|
 | 📝 **Name**       | [Sauna](https://app.hackthebox.com/machines/Sauna) |  
 | 🏷 **Type**       | HTB Machine                                        |
-| 🖥️ **OS**        | Windows                                            |
+| 🖥 **OS**         | Windows                                            |
 | 🎯 **Difficulty** | Easy                                               |
 
 # Scan
