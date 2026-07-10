@@ -1,3 +1,6 @@
+"HTB/Challenges/Hardware/Very Easy/Espresso/**/*" filter=git-crypt diff=git-crypt
+"HTB/Challenges/Satellite/Very Easy/Baby Frame/**/*" filter=git-crypt diff=git-crypt
+"HTB/Challenges/OSINT/Very Easy/The Puppet Master/**/*" filter=git-crypt diff=git-crypt
 HTB/Challenges/Web/Insomnia/** filter=git-crypt diff=git-crypt
 "HTB/Challenges/Hardware/Low Logic/**" filter=git-crypt diff=git-crypt
 HTB/Challenges/Web/PDFy/** filter=git-crypt diff=git-crypt
@@ -31,5 +34,3 @@ HTB/Machines/Windows/Medium/Checkpoint/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Windows/Medium/Checkpoint/images/bloodhound.png filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Enigma/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/MakeSense/**/* filter=git-crypt diff=git-crypt
-"HTB/Challenges/Satellite/Very Easy/Baby Frame/**/*" filter=git-crypt diff=git-crypt
-"HTB/Challenges/OSINT/Very Easy/The Puppet Master/**/*" filter=git-crypt diff=git-crypt
