@@ -1,4 +1,5 @@
 "HTB/Challenges/Hardware/Very Easy/Espresso/**/*" filter=git-crypt diff=git-crypt
+"HTB/Challenges/Hardware/Very Easy/Low Logic/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Satellite/Very Easy/Baby Frame/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/OSINT/Very Easy/The Puppet Master/**/*" filter=git-crypt diff=git-crypt
 HTB/Challenges/Web/Insomnia/** filter=git-crypt diff=git-crypt
