@@ -35,3 +35,4 @@ HTB/Machines/Windows/Medium/Checkpoint/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Windows/Medium/Checkpoint/images/bloodhound.png filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Enigma/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Medium/MakeSense/**/* filter=git-crypt diff=git-crypt
+HTB/Machines/Linux/Medium/Bedside/**/* filter=git-crypt diff=git-crypt
