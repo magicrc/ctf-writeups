@@ -5,6 +5,8 @@
 
 "HTB/Challenges/Misc/Very Easy/Lucky Dice/**/*" filter=git-crypt diff=git-crypt
 
+"HTB/Challenges/Quantum/Very Easy/Global Hyperlink Zone/**/*" filter=git-crypt diff=git-crypt
+
 "HTB/Challenges/Satellite/Very Easy/Baby Frame/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Satellite/Very Easy/First Contact/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Satellite/Very Easy/Scalped Platform/**/*" filter=git-crypt diff=git-crypt
