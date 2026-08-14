@@ -1,6 +1,6 @@
 #!/bin/bash
 # https://app.hackthebox.com/challenges/Toxic
-# Tags: Local File Inclusion, Log Posoning, Remote Code Execution, PHP, Deserialization
+# Tags: Local File Inclusion, Log Poisoning, Remote Code Execution, PHP, Deserialization
 
 TARGET=127.0.0.1:1337
 

@@ -2,9 +2,9 @@
 | Category      | Details                                                                  |
 |---------------|--------------------------------------------------------------------------|
 | 📝 Name       | [KORP Terminal](https://app.hackthebox.com/challenges/KORP%2520Terminal) |
-| 🏷 Type       | HTB Web Challenege                                                       |
+| 🏷 Type       | HTB Web Challenge                                                        |
 | 🎯 Difficulty | Very Easy                                                                |
-| #️⃣ Tags       | Blind SQL Injection, sqlmap, hashcat                                     |
+| 📁 Tags       | Blind SQL Injection, sqlmap, hashcat                                     |
 
 With simple `curl` we can see that target has SQL injection vulnerability in `username` parameter
 ```┌──(magicrc㉿perun)-[~/…/HTB/Challenges/Web/KORP Terminal]
