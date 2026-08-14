@@ -1,3 +1,8 @@
+"HTB/Challenges/Coding/Primed for Action/**" filter=git-crypt diff=git-crypt
+
+HTB/Challenges/Crypto/xorxorxor/** filter=git-crypt diff=git-crypt
+"HTB/Challenges/Crypto/The Last Dance/**" filter=git-crypt diff=git-crypt
+
 "HTB/Challenges/Hardware/Very Easy/Espresso/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Hardware/Very Easy/Low Logic/**/*" filter=git-crypt diff=git-crypt
 
@@ -5,24 +10,19 @@
 
 "HTB/Challenges/Misc/Very Easy/Lucky Dice/**/*" filter=git-crypt diff=git-crypt
 
+"HTB/Challenges/OSINT/Very Easy/The Puppet Master/**/*" filter=git-crypt diff=git-crypt
+
 "HTB/Challenges/Quantum/Very Easy/Global Hyperlink Zone/**/*" filter=git-crypt diff=git-crypt
 
 "HTB/Challenges/Satellite/Very Easy/Baby Frame/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Satellite/Very Easy/First Contact/**/*" filter=git-crypt diff=git-crypt
 "HTB/Challenges/Satellite/Very Easy/Scalped Platform/**/*" filter=git-crypt diff=git-crypt
 
-"HTB/Challenges/OSINT/Very Easy/The Puppet Master/**/*" filter=git-crypt diff=git-crypt
-HTB/Challenges/Web/Insomnia/** filter=git-crypt diff=git-crypt
-"HTB/Challenges/Hardware/Low Logic/**" filter=git-crypt diff=git-crypt
-HTB/Challenges/Web/PDFy/** filter=git-crypt diff=git-crypt
-HTB/Challenges/Desires/** filter=git-crypt diff=git-crypt
-HTB/Challenges/Interstellar/** filter=git-crypt diff=git-crypt
-HTB/Challenges/Web/TornadoService/** filter=git-crypt diff=git-crypt
-HTB/Challenges/Crypto/xorxorxor/** filter=git-crypt diff=git-crypt
-"HTB/Challenges/Crypto/The Last Dance/**" filter=git-crypt diff=git-crypt
-HTB/Challenges/Web/ScreenCrack/** filter=git-crypt diff=git-crypt
+HTB/Challenges/Web/EasyDesires/** filter=git-crypt diff=git-crypt
+HTB/Challenges/Web/Medium/Interstellar/** filter=git-crypt diff=git-crypt
+HTB/Challenges/Web/Medium/ScreenCrack/** filter=git-crypt diff=git-crypt
+
 HTB/Machines/Nocturnal/** filter=git-crypt diff=git-crypt
-"HTB/Challenges/Coding/Primed for Action/**" filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Silentium/**/* filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Silentium/images/api_key.png filter=git-crypt diff=git-crypt
 HTB/Machines/Linux/Easy/Reactor/**/* filter=git-crypt diff=git-crypt
